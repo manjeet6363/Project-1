@@ -1,0 +1,237 @@
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", sans-serif;
+}
+
+.container {
+  display: flex;
+  margin: 10px 170px;
+}
+.button {
+  padding: 22px 3px;
+  width: 100%;
+  background-color: rgb(29, 155, 240);
+  border-radius: 50px;
+  border: none;
+  color: white;
+  font-size: 20px;
+}
+.button:hover {
+  cursor: pointer;
+  color: rgb(29, 155, 240);
+  background-color: white;
+  border: 1px solid rgb(29, 155, 240);
+}
+.button2 {
+  padding: 15px 3px;
+  width: 25%;
+  background-color: rgb(29, 155, 240);
+  border-radius: 50px;
+  border: none;
+  color: white;
+  font-size: 15px;
+}
+.button2:hover {
+  cursor: pointer;
+  color: rgb(29, 155, 240);
+  background-color: white;
+  border: 1px solid rgb(29, 155, 240);
+}
+ul {
+  list-style: none;
+  padding: 0%;
+  width: 270px;
+}
+.textarea {
+  font-size: 30px;
+  border: none;
+}
+.textarea:hover {
+  border: none;
+  background-color: #ccc;
+  color: black;
+}
+.icon3 {
+  padding-left: 20px;
+}
+.icon3:hover {
+  font-size: 50px;
+}
+.icon4 {
+  font-weight: 400;
+}
+.clip {
+  clip-path: circle(50% at 50% 50%);
+  display: flex;
+  flex-direction: row;
+  margin: 15px;
+}
+.button4 {
+  display: flex;
+  padding: 10px 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  color: black;
+  font-weight: 600;
+}
+.button4:hover {
+  background-color: rgb(238, 238, 238);
+  cursor: pointer;
+}
+
+.leftbutton {
+  display: inline-block;
+  font-size: 15px;
+  width: 100%;
+  font-stretch: expanded;
+  padding-bottom: 8px;
+}
+.leftbutton:hover {
+  background-color: #ccc;
+  border-radius: 50px;
+  text-align: center;
+}
+.posts {
+  flex-direction: column;
+  padding-left: 50px;
+}
+.midbox {
+  padding: 0px 50px;
+  display: flex;
+  flex-direction: column;
+  width: 76%;
+  overflow: auto;
+  height: 768px;
+}
+.rightbox {
+  padding: 0px 40px;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+
+  display: ;
+}
+.rightbutton {
+  display: inline-block;
+  font-size: 15px;
+  width: 125%;
+  padding-bottom: 30px;
+}
+.rightbutton:hover {
+  background-color: rgb(230, 227, 227);
+  cursor: pointer;
+}
+.updates {
+  background-color: rgb(250, 254, 255);
+  width: 112%;
+}
+.showmore {
+  background-color: rgb(250, 254, 255);
+  border-radius: 50px;
+  color: rgb(29, 155, 240);
+  padding: 10px 3px;
+  width: 100%;
+  border: none;
+}
+.showmore:hover {
+  background-color: rgb(238, 238, 238);
+  cursor: pointer;
+  border-radius: 50px;
+}
+.searchbar {
+  padding: 10px 15px;
+  width: 100%;
+  background-color: rgb(243, 243, 243);
+  border-radius: 50px;
+  border: none;
+  color: black;
+  font-size: 20px;
+}
+
+.emoji {
+  font-size: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(59, 52, 52);
+}
+.collapsible {
+  background-color: rgb(134, 130, 130);
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+.active,
+.collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+@media only screen and (max-width: 768px) {
+  .button4 {
+    display: none;
+  }
+  .one {
+    display: flex;
+    width: 100%;
+  }
+  .leftbutton h1 {
+    font-size: small;
+    padding: 5px;
+  }
+  .container {
+    margin: 0%;
+    display: block;
+  }
+  .leftbox,
+  .container {
+    height: 140px;
+  }
+  .midbox {
+    width: 100%;
+    padding: 0%;
+  }
+  .rightbox {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1085px) {
+  .container {
+    display: flex;
+    box-sizing: border-box;
+    margin: 10px 0px;
+  }
+  .rightbox {
+    box-sizing: border-box;
+    height: 768px;
+    overflow: auto;
+    padding: 1%;
+    width: 50%;
+    font-size: small;
+  }
+  .leftbox {
+    display: none;
+  }
+  .midbox {
+    padding: 1%;
+    width: 50%;
+    font-size: small;
+  }
+}
